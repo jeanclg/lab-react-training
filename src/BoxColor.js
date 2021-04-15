@@ -1,10 +1,14 @@
 import React from 'react';
+import './BoxColor.css';
 
 const BoxColor = (props) => {
   return (
-    <h1 style={{ backgroundColor: `rgb(${props.r}, ${props.g}, ${props.b})` }}>
+    <p
+      className="box-color"
+      style={{ backgroundColor: `rgb(${props.r}, ${props.g}, ${props.b})` }}
+    >
       rgb({props.r},{props.g},{props.b})
-    </h1>
+    </p>
   );
 };
 

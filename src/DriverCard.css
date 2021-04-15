@@ -1,0 +1,43 @@
+.driver-container {
+  background-color: #425cbb;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.driver-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  color: white;
+  font-size: 24px;
+  margin-left: 15px;
+}
+
+.driver-content p,
+label {
+  margin: 0;
+}
+
+.driver-content .driver-car {
+  font-size: 16px;
+}
+
+.image-cropper {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.image-cropper img {
+  display: inline;
+  margin: 0;
+  height: 100%;
+  width: auto;
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import './Rating.css';
 
 const getRate = (rate) => {
   let rateNumber = Number(rate);
@@ -19,7 +20,7 @@ const getRate = (rate) => {
 
 const Rating = (props) => {
   return (
-    <div>
+    <div className="rate">
       <p>{getRate(props.children)}</p>
     </div>
   );

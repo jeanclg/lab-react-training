@@ -1,4 +1,5 @@
 import React from 'react';
+import './DriverCard.css';
 
 const getRate = (rate) => {
   let rateNumber = Number(rate);
@@ -19,13 +20,19 @@ const getRate = (rate) => {
 
 const DriverCard = (props) => {
   return (
-    <div>
-      <img src={props.img} alt="profile picture" />
-      <label>{props.name}</label>
-      <label>
-        {props.car.model} {props.car.licensePlate}
-      </label>
-      <p>{getRate(props.rating)}</p>
+    <div className="driver-container">
+      <div className="image-cropper">
+        <img src={props.img} alt="profile picture" />
+      </div>
+      <div className="driver-content">
+        <label>
+          <strong>{props.name}</strong>
+        </label>
+        <p>{getRate(props.rating)}</p>
+        <label className="driver-car">
+          {props.car.model} {props.car.licensePlate}
+        </label>
+      </div>
     </div>
   );
 };

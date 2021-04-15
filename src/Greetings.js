@@ -1,4 +1,5 @@
 import React from 'react';
+import './Greetings.css';
 
 const getLanguage = (lang) => {
   switch (lang) {
@@ -15,7 +16,7 @@ const getLanguage = (lang) => {
 
 const Greetings = (props) => {
   return (
-    <div>
+    <div className="greet-txt">
       <label>
         {getLanguage(props.lang)} {props.children}
       </label>

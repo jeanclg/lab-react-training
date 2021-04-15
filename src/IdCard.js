@@ -22,14 +22,23 @@ console.log(formatarData(data));
 const IdCard = (props) => {
   return (
     <div className="iteration-1">
-      <img src={props.picture} alt="profile picture" />
+      <img className="img" src={props.picture} alt="profile picture" />
       <div class="content">
-        <label>First Name: {props.firstName}</label>
-        <label>Last Name: {props.lastName}</label>
-        <label>Gender: {props.gender}</label>
-        <label>Height: {getMeter(props.height)}m</label>
         <label>
-          Birth: {formatarData(props.birth.toLocaleDateString('en-US'))}
+          <strong>First name:</strong> {props.firstName}
+        </label>
+        <label>
+          <strong>Last name:</strong> {props.lastName}
+        </label>
+        <label>
+          <strong>Gender:</strong> {props.gender}
+        </label>
+        <label>
+          <strong>Height:</strong> {getMeter(props.height)}m
+        </label>
+        <label>
+          <strong>Birth:</strong>{' '}
+          {formatarData(props.birth.toLocaleDateString('en-US'))}
         </label>
       </div>
     </div>

@@ -1,3 +1,7 @@
-p {
-  background-color: rgb(red, green, blue);
+.box-color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px black;
+  padding: 30px;
 }
